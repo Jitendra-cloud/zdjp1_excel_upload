@@ -1,3 +1,4 @@
+module.exports = srv => {
 
 srv.on('PUT', "ExcelUpload", async (req, next) => {
     if (req.data.excel) {
@@ -62,3 +63,5 @@ async function CallEntity(entity, data) {
     return insertResult; //returns response to excel upload entity
 
 };
+
+}
